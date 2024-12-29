@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calendario {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+}
+
+.calendario-topo {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+.calendario-topo .mes-ano {
+    font-weight: bold;
+}
+
+.dias-da-semana {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.dia {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+}
+
+.dia:hover {
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
+
+.dia.vazio {
+    background-color: #f9f9f9;
+}
+
+.dias {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 1px;
+}
+
+.dia.vazia {
+    background-color: #f9f9f9;
+}
